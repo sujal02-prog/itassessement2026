@@ -330,7 +330,7 @@ footer a:hover {
 /* Fast Food */
 .category-fastfood{
   height: 600px;
-  background: url('/html/pexels-readymade-4021944.jpg') center/cover no-repeat;
+  background: url('pexels-readymade-4021944.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -424,7 +424,7 @@ tr:hover {
 /* Healthy Food */
 .category-healthy{
   height: 600px;
-  background: url('/html/pexels-vanessa-loring-5965655.jpg') center/cover no-repeat;
+  background: url('pexels-vanessa-loring-5965655.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -451,7 +451,7 @@ tr:hover {
 /* Coffee */
 .category-coffee{
   height: 600px;
-  background: url('/html/pexels-ahmetyuksek-29105484.jpg') center/cover no-repeat;
+  background: url('pexels-ahmetyuksek-29105484.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -533,7 +533,7 @@ tr:hover {
 /* contact */
 .contact {
   height: 360px;
-  background: url('/html/pexels-markus-winkler-1430818-18536259.jpg') center/cover no-repeat;
+  background: url('pexels-markus-winkler-1430818-18536259.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -598,7 +598,7 @@ form button:hover {
 /* about */
 .about {
   height: 360px;
-  background: url('/html/pexels-burakeroglu3-31089991.jpg') center/cover no-repeat;
+  background: url('pexels-burakeroglu3-31089991.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
