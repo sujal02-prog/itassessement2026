@@ -644,7 +644,7 @@ form button:hover {
   width: 400px;
 }
 
-/* google Map link */
+/*link */
 .about-container a:link {
   color: #2b46ae;
 }
@@ -660,6 +660,5 @@ form button:hover {
 .about-container a:active {
   color: #ffffff;
 }
-
 
 /*------------------------------------*/
