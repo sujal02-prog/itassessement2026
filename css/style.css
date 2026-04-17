@@ -1,0 +1,665 @@
+
+/* main body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* body */
+body {
+  background: #f8f8f8;
+  color: #222;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(17, 17, 17, 0.75);
+  color: white;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1200px;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+/* logo */
+.logo-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-name span {
+  color: #e63946;
+}
+
+/* navigation */
+.navi {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.navi li {
+  position: relative;
+}
+
+.navi a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  transition: 0.3s;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.navi a:hover {
+  color: #e63946;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* active */
+.active {
+  border-bottom: 2px solid #e63946;
+}
+
+/* dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: #222;
+  list-style: none;
+  padding: 10px 0;
+  display: none;
+  border-radius: 8px;
+  width: 150px;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* search-bar */
+.search-bar input {
+  padding: 7px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 150px;
+  transition: 0.4s;
+  background: white;
+  color: black;
+}
+
+.search-bar input:focus {
+  width: 250px;
+  background-color: rgba(179, 97, 97, 0.686);
+  color: white;
+}
+
+/* pic-slider */
+.sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 140px 20px 60px;
+}
+
+/* fixed video */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+/* overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* panel */
+.image-panel {
+  width: 800px;
+  max-width: 92%;
+  height: 460px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+  opacity: 0.9;
+}
+
+.image-panel:hover {
+  transform: scale(1.04);
+}
+
+/* slides */
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: slideMove 9s infinite;
+}
+
+.slides img {
+  width: 33.33%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* animation */
+@keyframes slideMove {
+  0%, 30% {
+    transform: translateX(0);
+  }
+  33%, 63% {
+    transform: translateX(-33.33%);
+  }
+  66%, 96% {
+    transform: translateX(-66.66%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* panel text */
+.panel-text {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: auto;
+  transform: none;
+  text-align: left;
+  z-index: 2;
+}
+
+.panel-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.panel-text p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+  color: white;
+}
+
+/* button */
+.butn1 {
+  padding: 10px 22px;
+  font-size: 15px;
+  background: #d5bc1b;
+  border: none;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.butn1:hover {
+  background: #73bd23;
+  color: white;
+}
+
+/* categories */
+.categories {
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.categories h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* food */
+.food-categories {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.food {
+  width: 260px;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.food img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.food:hover {
+  transform: scale(1.05);
+}
+
+.food h3 {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  z-index: 2;
+  font-size: 25px;
+}
+
+/* footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 8px 0;
+}
+
+/* footer links */
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  color: #e63946; 
+}
+
+/*----------------------------------------------------------------------------*/
+
+
+/* Fast Food */
+.category-fastfood{
+  height: 600px;
+  background: url('/html/pexels-readymade-4021944.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.category-fastfood h1 {
+  font-size: 50px;
+  color:whitesmoke;
+}
+
+.category-fastfood p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+}
+
+/* items */
+.category-items {
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  background-color: rgb(200, 200, 200);
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item h3 {
+  margin: 10px 0 5px;
+}
+
+.item p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* table */
+.menu-table {
+  padding: 40px 20px;
+}
+
+.menu-table h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+
+th {
+  background: #111;
+  color: white;
+}
+
+tr:hover {
+  background-color: rgb(211, 208, 208);
+}
+
+
+/*---------------------------------------------------------------------------------*/
+
+
+/* Healthy Food */
+.category-healthy{
+  height: 600px;
+  background: url('/html/pexels-vanessa-loring-5965655.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.category-healthy h1 {
+  font-size: 50px;
+  color:whitesmoke;
+}
+
+.category-healthy p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+
+
+/* Coffee */
+.category-coffee{
+  height: 600px;
+  background: url('/html/pexels-ahmetyuksek-29105484.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.category-coffee h1 {
+  font-size: 50px;
+  color:whitesmoke;
+}
+
+.category-coffee p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+}
+
+
+/*-------------------------------------------------*/
+
+
+/* Gallery */
+.gallery-body {
+  background: #121212;
+  color: white;
+}
+
+.gallery-section {
+  padding: 40px 60px;
+}
+
+.gallery-section h2 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+  font-size: 22px;
+}
+
+/* grid */
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* item */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 18px;
+  transition: 0.3s; 
+}
+
+/* link */
+.gallery-item a {
+  display: block;
+  text-decoration: none;
+}
+
+/* image */
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  cursor: pointer;
+  display: block;
+}
+
+/* hover */
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+
+/*----------------------------------------------------------------------------------------- */
+
+
+/* contact */
+.contact {
+  height: 360px;
+  background: url('/html/pexels-markus-winkler-1430818-18536259.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.contact h1{
+  margin-top: 120px;
+}
+
+/* form */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+form button {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: rgb(250, 69, 69);
+  color: white;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: green;
+}
+
+form button:hover {
+  background-color: green;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+
+
+/* about */
+.about {
+  height: 360px;
+  background: url('/html/pexels-burakeroglu3-31089991.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 40px;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+/* container */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
+  justify-content: center;
+}
+
+/* text */
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.about-text p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* map */
+.map {
+  width: 400px;
+}
+
+/* google Map link */
+.about-container a:link {
+  color: #2b46ae;
+}
+
+.about-container a:visited {
+  color: #2789b0;
+}
+
+.about-container a:hover {
+  color: #ca5454;
+}
+
+.about-container a:active {
+  color: #ffffff;
+}
+
+
+/*------------------------------------*/
