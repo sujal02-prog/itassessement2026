@@ -1,0 +1,11 @@
+:root {
+    --max-width: 1320px;
+    --min-width: 960px;
+    --margin: auto;
+}
+
+.width_management {
+    max-width: var(--max-width);
+    min-width: var(--min-width);
+    margin: var(--margin);
+}

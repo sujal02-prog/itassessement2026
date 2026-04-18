@@ -9,7 +9,7 @@
 
 /* body */
 body {
-  background: #f8f8f8;
+  background: #000000;
   color: #222;
 }
 
@@ -136,11 +136,12 @@ header {
 .bg-video {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -2;
+  max-width: 1320px;
+  margin: auto;
 }
 /* overlay */
 .overlay {
@@ -302,7 +303,7 @@ header {
 
 /* footer */
 footer {
-  background: #111;
+  background: #4e0303;
   color: white;
   text-align: center;
   padding: 20px;

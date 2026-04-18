@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Umami District</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/width-cap.css">
 </head>
-<body>
-
+<body style="background-color: white;">
+<div class="width_management">
 <header>
   <div class="logo-name">Umami <span>District</span></div>
 
@@ -59,7 +60,7 @@
 
 </section>
 
-<footer>
+<footer style="bottom: 0; max-width: 1320px; position: fixed; width: 100%;">
   <p>© 2026 Umami District | All Rights Reserved</p>
   <p class="footer-nav">
     <a href="index.html">Home</a> |
@@ -87,6 +88,6 @@ function validateForm() {
   return true;
 }
 </script>
-
+</div>
 </body>
 </html>
